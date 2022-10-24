@@ -37,11 +37,13 @@ getInstruction('mashedPotatoes', 3, (step0) => {
 getInstruction('mashedPotatoes', 4, (step0) => {
   document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
   document.querySelector("#mashedPotatoes").innerHTML += `<li>Mashed potatoes are ready!</li>`
+  document.querySelector("#mashedPotatoesImg").removeAttribute("hidden");
 });
 });
 });
 });
 });
+
 
 // Iteration 2 - using promises
 obtainInstruction('steak', 0)
@@ -70,6 +72,7 @@ obtainInstruction("steak", 7)
   .then( (step7) => {
     document.querySelector("#steak").innerHTML += `<li>${step7}</li>`
     document.querySelector("#steak").innerHTML += `<li>Steak is ready!</li>`
+    document.querySelector("#steakImg").removeAttribute("hidden");
     })
   })
 })
@@ -109,6 +112,7 @@ await obtainInstruction("broccoli", 6)
 .then( (step6) => {
   document.querySelector("#broccoli").innerHTML += `<li>${step6}</li>`
   document.querySelector("#broccoli").innerHTML += `<li>Broccoli is ready!</li>`
+  document.querySelector("#broccoliImg").removeAttribute("hidden");
 })
 }
 
