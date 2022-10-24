@@ -1,10 +1,9 @@
 // This will print in the wrong order.
 // We added it as an example and to test that the arrays from data.js are loaded
 
-// 🚨🚨🚨 Comment out the below code before you start working on the code
 
 // Out of sync
-  getInstruction("mashedPotatoes", 0, (step1) => {
+/*  getInstruction("mashedPotatoes", 0, (step1) => {
     document.querySelector("#mashedPotatoes").innerHTML += `<li>${step1}</li>`;
   }, (error) => console.log(error));
   
@@ -24,11 +23,27 @@
     document.querySelector("#mashedPotatoes").innerHTML += `<li>${step5}</li>`;
     document.querySelector("#mashedPotatoesImg").removeAttribute("hidden");
   }, (error) => console.log(error));
-
+*/
 
 
 // Iteration 1 - using callbacks
-// ...
+getInstruction('mashedPotatoes', 0, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+getInstruction('mashedPotatoes', 1, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+getInstruction('mashedPotatoes', 2, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+getInstruction('mashedPotatoes', 3, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+getInstruction('mashedPotatoes', 4, (step0) => {
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>${step0}</li>`
+  document.querySelector("#mashedPotatoes").innerHTML += `<li>Mashed potatoes are ready!</li>`
+});
+});
+});
+});
+});
+
 
 // Iteration 2 - using promises
 // ...
